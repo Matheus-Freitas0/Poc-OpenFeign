@@ -20,8 +20,4 @@ public class ViaCepController {
     public ResponseEntity<EnderecoResponse> buscarEnderecoPorCep(@PathVariable("cep") String cep) {
         return ResponseEntity.ok().body(viaCepClient.buscarEnderecoPorCep(cep));
     }
-    @GetMapping("/ping")
-    public String ping() {
-        return "ok";
-    }
 }
