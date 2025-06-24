@@ -1,4 +1,4 @@
-package api.response;
+package com.poc.openfeign.api.response;
 
 public record EnderecoResponse(
             String cep,
